@@ -3,6 +3,7 @@
 Este repositorio contiene la automatización para el despliegue de un Sistema SOC (Security Operations Center) basado en contenedores Docker, facilitando la implementación, integración y gestión de herramientas clave para la seguridad informática.
 
 📖 Documentación Incluida
+
 En este repositorio se encuentra disponible la guía detallada:
 
 DevOps_Business_Automated_SOC_System_Deployment_By_CristianPérez.pdf
@@ -15,55 +16,55 @@ El objetivo es ofrecer una solución automatizada para desplegar y gestionar un 
 
 🛠️ Tecnologías Utilizadas
 
-Docker Compose → Facilita la gestión de aplicaciones multicontenedor.
+- Docker Compose → Facilita la gestión de aplicaciones multicontenedor.
 
-Splunk → Herramienta de SIEM para la recopilación y análisis de logs en tiempo real.
+- Splunk → Herramienta de SIEM para la recopilación y análisis de logs en tiempo real.
 
-TheHive → Plataforma de gestión de incidentes de seguridad.
+- TheHive → Plataforma de gestión de incidentes de seguridad.
 
-Cortex → Framework de automatización y análisis de amenazas.
+- Cortex → Framework de automatización y análisis de amenazas.
 
-MISP → Plataforma de inteligencia de amenazas (TIP).
+- MISP → Plataforma de inteligencia de amenazas (TIP).
 
-ElasticSearch → Motor de búsqueda y análisis utilizado por TheHive.
+- ElasticSearch → Motor de búsqueda y análisis utilizado por TheHive.
 
-Redis → Base de datos en memoria utilizada por MISP para mejorar el rendimiento.
+- Redis → Base de datos en memoria utilizada por MISP para mejorar el rendimiento.
 
-MySQL → Base de datos utilizada por MISP para almacenamiento de datos.
+- MySQL → Base de datos utilizada por MISP para almacenamiento de datos.
 
-Cassandra → Base de datos NoSQL utilizada por TheHive y Cortex.
+- Cassandra → Base de datos NoSQL utilizada por TheHive y Cortex.
 
-MinIO → Servidor de almacenamiento compatible con S3 utilizado por TheHive.
+- MinIO → Servidor de almacenamiento compatible con S3 utilizado por TheHive.
 
 ⚙️ Funcionalidades Principales
 
-🔍 Monitoreo y Análisis de Seguridad
+- 🔍 Monitoreo y Análisis de Seguridad
 
-Recopilación y análisis de logs en tiempo real con Splunk.
+  - Recopilación y análisis de logs en tiempo real con Splunk.
 
-Visualización de eventos y alertas de seguridad.
+  - Visualización de eventos y alertas de seguridad.
 
-📂 Gestión de Incidentes
+- 📂 Gestión de Incidentes
 
-Creación y administración de casos en TheHive.
+  - Creación y administración de casos en TheHive.
 
-Integración con Cortex para ejecutar análisis automatizados sobre artefactos sospechosos.
+  - Integración con Cortex para ejecutar análisis automatizados sobre artefactos sospechosos.
 
-Automatización de la respuesta a incidentes.
+  - Automatización de la respuesta a incidentes.
 
-🛡️ Inteligencia de Amenazas
+- 🛡️ Inteligencia de Amenazas
 
-Integración con MISP para compartir y analizar indicadores de compromiso (IoCs).
+  - Integración con MISP para compartir y analizar indicadores de compromiso (IoCs).
 
-Correlación de eventos con bases de datos de inteligencia de amenazas.
+  - Correlación de eventos con bases de datos de inteligencia de amenazas.
 
-🔄 Integración y Automatización
+- 🔄 Integración y Automatización
 
-Integración total entre Splunk, TheHive, Cortex y MISP.
+- Integración total entre Splunk, TheHive, Cortex y MISP.
 
-Configuración de flujos de trabajo automáticos para la respuesta ante incidentes.
+- Configuración de flujos de trabajo automáticos para la respuesta ante incidentes.
 
-Generación de alertas y notificaciones en tiempo real a través de Discord.
+- Generación de alertas y notificaciones en tiempo real a través de Discord.
 
 📂 Estructura del Proyecto
 
@@ -71,19 +72,19 @@ El despliegue del sistema está completamente automatizado mediante archivos Doc
 
 Servicios Incluidos:
 
-Splunk (SIEM)
+- Splunk (SIEM)
 
-TheHive (Gestión de incidentes)
+- TheHive (Gestión de incidentes)
 
-Cortex (Análisis de amenazas)
+- Cortex (Análisis de amenazas)
 
-MISP (Inteligencia de amenazas)
+- MISP (Inteligencia de amenazas)
 
-Bases de datos (MySQL, Cassandra, Redis)
+- Bases de datos (MySQL, Cassandra, Redis)
 
-Motor de búsqueda (ElasticSearch)
+- Motor de búsqueda (ElasticSearch)
 
-Almacenamiento (MinIO)
+- Almacenamiento (MinIO)
 
 📜 Guía de Uso
 
@@ -93,13 +94,13 @@ Para más detalles sobre la instalación y configuración, consulta el manual ad
 
 Incluye:
 
-Requisitos previos.
+- Requisitos previos.
 
-Configuración inicial.
+- Configuración inicial.
 
-Integración entre herramientas.
+- Integración entre herramientas.
 
-Pruebas funcionales y casos de uso.
+- Pruebas funcionales y casos de uso.
 
 🤝 Contribuciones
 
@@ -107,8 +108,13 @@ Si deseas contribuir al proyecto, puedes hacerlo a través de pull requests o pr
 
 👤 Contacto
 
+Si tienes dudas, sugerencias o deseas contribuir al proyecto, no dudes en contactarme:
+
 Creador: Cristian Pérez Gómez
 
-📧 Email: cpergom2409@gmail.com🔗 Linkedin: Cristian Pérez Gómez
+Email: cpergom2409@gmail.com
+
+Linkedin: www.linkedin.com/in/cristian-pérez-356961262
+
 
 ¡Gracias por tu interés en este proyecto! 🚀
