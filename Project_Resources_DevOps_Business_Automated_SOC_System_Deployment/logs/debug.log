@@ -1,0 +1,246 @@
+2025-02-25 08:16:07 Notice: Notice (8): Undefined variable: length in [/var/www/MISP/app/View/Users/change_pw.ctp, line 6]
+Trace:
+ErrorHandler::handleError() - APP/Lib/cakephp/lib/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Users/change_pw.ctp, line 6
+View::_evaluate() - APP/Lib/cakephp/lib/Cake/View/View.php, line 971
+View::_render() - APP/Lib/cakephp/lib/Cake/View/View.php, line 933
+View::render() - APP/Lib/cakephp/lib/Cake/View/View.php, line 473
+Controller::render() - APP/Lib/cakephp/lib/Cake/Controller/Controller.php, line 968
+Dispatcher::_invoke() - APP/Lib/cakephp/lib/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - APP/Lib/cakephp/lib/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 99
+
+2025-02-25 08:16:07 Notice: Notice (8): Undefined variable: complexity in [/var/www/MISP/app/View/Users/change_pw.ctp, line 7]
+Trace:
+ErrorHandler::handleError() - APP/Lib/cakephp/lib/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Users/change_pw.ctp, line 7
+View::_evaluate() - APP/Lib/cakephp/lib/Cake/View/View.php, line 971
+View::_render() - APP/Lib/cakephp/lib/Cake/View/View.php, line 933
+View::render() - APP/Lib/cakephp/lib/Cake/View/View.php, line 473
+Controller::render() - APP/Lib/cakephp/lib/Cake/Controller/Controller.php, line 968
+Dispatcher::_invoke() - APP/Lib/cakephp/lib/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - APP/Lib/cakephp/lib/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 99
+
+2025-02-25 08:16:24 Notice: Notice (8): Undefined index: last_pw_change in [/var/www/MISP/app/View/Users/view.ctp, line 162]
+Trace:
+ErrorHandler::handleError() - APP/Lib/cakephp/lib/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Users/view.ctp, line 162
+View::_evaluate() - APP/Lib/cakephp/lib/Cake/View/View.php, line 971
+View::_render() - APP/Lib/cakephp/lib/Cake/View/View.php, line 933
+View::render() - APP/Lib/cakephp/lib/Cake/View/View.php, line 473
+Controller::render() - APP/Lib/cakephp/lib/Cake/Controller/Controller.php, line 968
+Dispatcher::_invoke() - APP/Lib/cakephp/lib/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - APP/Lib/cakephp/lib/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 99
+
+2025-02-25 08:28:16 Notice: Notice (8): Undefined index: last_pw_change in [/var/www/MISP/app/View/Users/view.ctp, line 162]
+Trace:
+ErrorHandler::handleError() - APP/Lib/cakephp/lib/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Users/view.ctp, line 162
+View::_evaluate() - APP/Lib/cakephp/lib/Cake/View/View.php, line 971
+View::_render() - APP/Lib/cakephp/lib/Cake/View/View.php, line 933
+View::render() - APP/Lib/cakephp/lib/Cake/View/View.php, line 473
+Controller::render() - APP/Lib/cakephp/lib/Cake/Controller/Controller.php, line 968
+Dispatcher::_invoke() - APP/Lib/cakephp/lib/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - APP/Lib/cakephp/lib/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 99
+
+2025-02-25 09:11:45 Notice: GPG couldn't be initialized, GPG encryption and signing will be not available.
+[Crypt_GPG_FileException] The 'homedir' "" is not readable or does not exist and cannot be created. This can happen if 'homedir' is not specified in the Crypt_GPG options, Crypt_GPG is run as the web user, and the web user has no home directory.
+Stack Trace:
+#0 /var/www/MISP/app/Vendor/pear/crypt_gpg/Crypt/GPGAbstract.php(256): Crypt_GPG_Engine->__construct()
+#1 /var/www/MISP/app/Lib/Tools/CryptGpgExtended.php(11): Crypt_GPGAbstract->__construct()
+#2 /var/www/MISP/app/Lib/Tools/GpgTool.php(34): CryptGpgExtended->__construct()
+#3 /var/www/MISP/app/Model/User.php(1516): GpgTool::initializeGpg()
+#4 /var/www/MISP/app/Model/User.php(859): User->initializeGpg()
+#5 /var/www/MISP/app/Model/User.php(983): User->sendEmail()
+#6 /var/www/MISP/app/Controller/UsersController.php(770): User->initiatePasswordReset()
+#7 [internal function]: UsersController->admin_add()
+#8 /var/www/MISP/app/Lib/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs()
+#9 /var/www/MISP/app/Lib/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction()
+#10 /var/www/MISP/app/Lib/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke()
+#11 /var/www/MISP/app/webroot/index.php(99): Dispatcher->dispatch()
+#12 {main}
+2025-02-25 09:19:19 Notice: Notice (8): Undefined index: last_pw_change in [/var/www/MISP/app/View/Users/view.ctp, line 162]
+Trace:
+ErrorHandler::handleError() - APP/Lib/cakephp/lib/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Users/view.ctp, line 162
+View::_evaluate() - APP/Lib/cakephp/lib/Cake/View/View.php, line 971
+View::_render() - APP/Lib/cakephp/lib/Cake/View/View.php, line 933
+View::render() - APP/Lib/cakephp/lib/Cake/View/View.php, line 473
+Controller::render() - APP/Lib/cakephp/lib/Cake/Controller/Controller.php, line 968
+UsersController::admin_view() - APP/Controller/UsersController.php, line 631
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - APP/Lib/cakephp/lib/Cake/Controller/Controller.php, line 499
+Dispatcher::_invoke() - APP/Lib/cakephp/lib/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - APP/Lib/cakephp/lib/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 99
+
+2025-02-25 09:26:27 Notice: GPG couldn't be initialized, GPG encryption and signing will be not available.
+[Crypt_GPG_FileException] The 'homedir' "" is not readable or does not exist and cannot be created. This can happen if 'homedir' is not specified in the Crypt_GPG options, Crypt_GPG is run as the web user, and the web user has no home directory.
+Stack Trace:
+#0 /var/www/MISP/app/Vendor/pear/crypt_gpg/Crypt/GPGAbstract.php(256): Crypt_GPG_Engine->__construct()
+#1 /var/www/MISP/app/Lib/Tools/CryptGpgExtended.php(11): Crypt_GPGAbstract->__construct()
+#2 /var/www/MISP/app/Lib/Tools/GpgTool.php(34): CryptGpgExtended->__construct()
+#3 /var/www/MISP/app/Model/User.php(1516): GpgTool::initializeGpg()
+#4 /var/www/MISP/app/Model/User.php(859): User->initializeGpg()
+#5 /var/www/MISP/app/Model/User.php(1229): User->sendEmail()
+#6 /var/www/MISP/app/Model/User.php(1156): User->resetauthkey()
+#7 /var/www/MISP/app/Console/Command/AdminShell.php(741): User->resetAllSyncAuthKeys()
+#8 /var/www/MISP/app/Console/Command/AppShell.php(48): AdminShell->resetSyncAuthkeys()
+#9 /var/www/MISP/app/Vendor/kamisama/php-resque-ex/lib/Resque/Job.php(199): AppShell->perform()
+#10 /var/www/MISP/app/Vendor/kamisama/php-resque-ex/lib/Resque/Worker.php(278): Resque_Job->perform()
+#11 /var/www/MISP/app/Vendor/kamisama/php-resque-ex/lib/Resque/Worker.php(241): Resque_Worker->perform()
+#12 /var/www/MISP/app/Vendor/kamisama/php-resque-ex/bin/resque(109): Resque_Worker->work()
+#13 /var/www/MISP/app/Vendor/kamisama/php-resque-ex/bin/resque(100): startWorker()
+#14 {main}
+2025-02-25 09:28:50 Notice: Notice (8): Undefined index: last_pw_change in [/var/www/MISP/app/View/Users/view.ctp, line 162]
+Trace:
+ErrorHandler::handleError() - APP/Lib/cakephp/lib/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Users/view.ctp, line 162
+View::_evaluate() - APP/Lib/cakephp/lib/Cake/View/View.php, line 971
+View::_render() - APP/Lib/cakephp/lib/Cake/View/View.php, line 933
+View::render() - APP/Lib/cakephp/lib/Cake/View/View.php, line 473
+Controller::render() - APP/Lib/cakephp/lib/Cake/Controller/Controller.php, line 968
+UsersController::admin_view() - APP/Controller/UsersController.php, line 631
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - APP/Lib/cakephp/lib/Cake/Controller/Controller.php, line 499
+Dispatcher::_invoke() - APP/Lib/cakephp/lib/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - APP/Lib/cakephp/lib/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 99
+
+2025-02-25 09:30:55 Notice: Notice (8): Undefined index: last_pw_change in [/var/www/MISP/app/View/Users/view.ctp, line 162]
+Trace:
+ErrorHandler::handleError() - APP/Lib/cakephp/lib/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Users/view.ctp, line 162
+View::_evaluate() - APP/Lib/cakephp/lib/Cake/View/View.php, line 971
+View::_render() - APP/Lib/cakephp/lib/Cake/View/View.php, line 933
+View::render() - APP/Lib/cakephp/lib/Cake/View/View.php, line 473
+Controller::render() - APP/Lib/cakephp/lib/Cake/Controller/Controller.php, line 968
+UsersController::admin_view() - APP/Controller/UsersController.php, line 631
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - APP/Lib/cakephp/lib/Cake/Controller/Controller.php, line 499
+Dispatcher::_invoke() - APP/Lib/cakephp/lib/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - APP/Lib/cakephp/lib/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 99
+
+2025-02-25 09:32:52 Notice: Notice (8): Undefined index: last_pw_change in [/var/www/MISP/app/View/Users/view.ctp, line 162]
+Trace:
+ErrorHandler::handleError() - APP/Lib/cakephp/lib/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Users/view.ctp, line 162
+View::_evaluate() - APP/Lib/cakephp/lib/Cake/View/View.php, line 971
+View::_render() - APP/Lib/cakephp/lib/Cake/View/View.php, line 933
+View::render() - APP/Lib/cakephp/lib/Cake/View/View.php, line 473
+Controller::render() - APP/Lib/cakephp/lib/Cake/Controller/Controller.php, line 968
+UsersController::admin_view() - APP/Controller/UsersController.php, line 631
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - APP/Lib/cakephp/lib/Cake/Controller/Controller.php, line 499
+Dispatcher::_invoke() - APP/Lib/cakephp/lib/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - APP/Lib/cakephp/lib/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 99
+
+2025-02-26 10:28:29 Notice: GPG couldn't be initialized, GPG encryption and signing will be not available.
+[Crypt_GPG_FileException] The 'homedir' "" is not readable or does not exist and cannot be created. This can happen if 'homedir' is not specified in the Crypt_GPG options, Crypt_GPG is run as the web user, and the web user has no home directory.
+Stack Trace:
+#0 /var/www/MISP/app/Vendor/pear/crypt_gpg/Crypt/GPGAbstract.php(256): Crypt_GPG_Engine->__construct()
+#1 /var/www/MISP/app/Lib/Tools/CryptGpgExtended.php(11): Crypt_GPGAbstract->__construct()
+#2 /var/www/MISP/app/Lib/Tools/GpgTool.php(34): CryptGpgExtended->__construct()
+#3 /var/www/MISP/app/Model/User.php(1516): GpgTool::initializeGpg()
+#4 /var/www/MISP/app/Model/User.php(859): User->initializeGpg()
+#5 /var/www/MISP/app/Model/User.php(983): User->sendEmail()
+#6 /var/www/MISP/app/Controller/UsersController.php(1760): User->initiatePasswordReset()
+#7 [internal function]: UsersController->initiatePasswordReset()
+#8 /var/www/MISP/app/Lib/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs()
+#9 /var/www/MISP/app/Lib/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction()
+#10 /var/www/MISP/app/Lib/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke()
+#11 /var/www/MISP/app/webroot/index.php(99): Dispatcher->dispatch()
+#12 {main}
+2025-02-26 10:28:38 Notice: GPG couldn't be initialized, GPG encryption and signing will be not available.
+[Crypt_GPG_FileException] The 'homedir' "" is not readable or does not exist and cannot be created. This can happen if 'homedir' is not specified in the Crypt_GPG options, Crypt_GPG is run as the web user, and the web user has no home directory.
+Stack Trace:
+#0 /var/www/MISP/app/Vendor/pear/crypt_gpg/Crypt/GPGAbstract.php(256): Crypt_GPG_Engine->__construct()
+#1 /var/www/MISP/app/Lib/Tools/CryptGpgExtended.php(11): Crypt_GPGAbstract->__construct()
+#2 /var/www/MISP/app/Lib/Tools/GpgTool.php(34): CryptGpgExtended->__construct()
+#3 /var/www/MISP/app/Model/User.php(1516): GpgTool::initializeGpg()
+#4 /var/www/MISP/app/Model/User.php(859): User->initializeGpg()
+#5 /var/www/MISP/app/Model/User.php(983): User->sendEmail()
+#6 /var/www/MISP/app/Controller/UsersController.php(1760): User->initiatePasswordReset()
+#7 [internal function]: UsersController->initiatePasswordReset()
+#8 /var/www/MISP/app/Lib/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs()
+#9 /var/www/MISP/app/Lib/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction()
+#10 /var/www/MISP/app/Lib/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke()
+#11 /var/www/MISP/app/webroot/index.php(99): Dispatcher->dispatch()
+#12 {main}
+2025-02-26 10:29:09 Notice: Notice (8): Undefined variable: length in [/var/www/MISP/app/View/Users/change_pw.ctp, line 6]
+Trace:
+ErrorHandler::handleError() - APP/Lib/cakephp/lib/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Users/change_pw.ctp, line 6
+View::_evaluate() - APP/Lib/cakephp/lib/Cake/View/View.php, line 971
+View::_render() - APP/Lib/cakephp/lib/Cake/View/View.php, line 933
+View::render() - APP/Lib/cakephp/lib/Cake/View/View.php, line 473
+Controller::render() - APP/Lib/cakephp/lib/Cake/Controller/Controller.php, line 968
+Dispatcher::_invoke() - APP/Lib/cakephp/lib/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - APP/Lib/cakephp/lib/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 99
+
+2025-02-26 10:29:09 Notice: Notice (8): Undefined variable: complexity in [/var/www/MISP/app/View/Users/change_pw.ctp, line 7]
+Trace:
+ErrorHandler::handleError() - APP/Lib/cakephp/lib/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Users/change_pw.ctp, line 7
+View::_evaluate() - APP/Lib/cakephp/lib/Cake/View/View.php, line 971
+View::_render() - APP/Lib/cakephp/lib/Cake/View/View.php, line 933
+View::render() - APP/Lib/cakephp/lib/Cake/View/View.php, line 473
+Controller::render() - APP/Lib/cakephp/lib/Cake/Controller/Controller.php, line 968
+Dispatcher::_invoke() - APP/Lib/cakephp/lib/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - APP/Lib/cakephp/lib/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 99
+
+2025-02-26 10:29:18 Notice: Notice (8): Undefined variable: length in [/var/www/MISP/app/View/Users/change_pw.ctp, line 6]
+Trace:
+ErrorHandler::handleError() - APP/Lib/cakephp/lib/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Users/change_pw.ctp, line 6
+View::_evaluate() - APP/Lib/cakephp/lib/Cake/View/View.php, line 971
+View::_render() - APP/Lib/cakephp/lib/Cake/View/View.php, line 933
+View::render() - APP/Lib/cakephp/lib/Cake/View/View.php, line 473
+Controller::render() - APP/Lib/cakephp/lib/Cake/Controller/Controller.php, line 968
+Dispatcher::_invoke() - APP/Lib/cakephp/lib/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - APP/Lib/cakephp/lib/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 99
+
+2025-02-26 10:29:18 Notice: Notice (8): Undefined variable: complexity in [/var/www/MISP/app/View/Users/change_pw.ctp, line 7]
+Trace:
+ErrorHandler::handleError() - APP/Lib/cakephp/lib/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Users/change_pw.ctp, line 7
+View::_evaluate() - APP/Lib/cakephp/lib/Cake/View/View.php, line 971
+View::_render() - APP/Lib/cakephp/lib/Cake/View/View.php, line 933
+View::render() - APP/Lib/cakephp/lib/Cake/View/View.php, line 473
+Controller::render() - APP/Lib/cakephp/lib/Cake/Controller/Controller.php, line 968
+Dispatcher::_invoke() - APP/Lib/cakephp/lib/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - APP/Lib/cakephp/lib/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 99
+
+2025-02-26 10:29:56 Notice: Notice (8): Undefined variable: length in [/var/www/MISP/app/View/Users/change_pw.ctp, line 6]
+Trace:
+ErrorHandler::handleError() - APP/Lib/cakephp/lib/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Users/change_pw.ctp, line 6
+View::_evaluate() - APP/Lib/cakephp/lib/Cake/View/View.php, line 971
+View::_render() - APP/Lib/cakephp/lib/Cake/View/View.php, line 933
+View::render() - APP/Lib/cakephp/lib/Cake/View/View.php, line 473
+Controller::render() - APP/Lib/cakephp/lib/Cake/Controller/Controller.php, line 968
+Dispatcher::_invoke() - APP/Lib/cakephp/lib/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - APP/Lib/cakephp/lib/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 99
+
+2025-02-26 10:29:56 Notice: Notice (8): Undefined variable: complexity in [/var/www/MISP/app/View/Users/change_pw.ctp, line 7]
+Trace:
+ErrorHandler::handleError() - APP/Lib/cakephp/lib/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Users/change_pw.ctp, line 7
+View::_evaluate() - APP/Lib/cakephp/lib/Cake/View/View.php, line 971
+View::_render() - APP/Lib/cakephp/lib/Cake/View/View.php, line 933
+View::render() - APP/Lib/cakephp/lib/Cake/View/View.php, line 473
+Controller::render() - APP/Lib/cakephp/lib/Cake/Controller/Controller.php, line 968
+Dispatcher::_invoke() - APP/Lib/cakephp/lib/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - APP/Lib/cakephp/lib/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 99
+

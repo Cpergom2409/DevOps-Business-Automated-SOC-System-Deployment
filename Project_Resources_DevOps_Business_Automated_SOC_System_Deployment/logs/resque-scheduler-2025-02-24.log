@@ -1,0 +1,4 @@
+[2025-02-24 17:02:00] main.INFO: *** Starting scheduler worker bc4ce09619ec:620:_schdlr_ {"type":"start","worker":"bc4ce09619ec:620","queues":["_schdlr_"]} []
+[2025-02-24 17:02:00] main.INFO: Starting worker bc4ce09619ec:620:_schdlr_ {"type":"start","worker":"bc4ce09619ec:620:_schdlr_"} []
+[2025-02-24 17:09:41] main.INFO: *** Starting scheduler worker 493dee600e17:560:_schdlr_ {"type":"start","worker":"493dee600e17:560","queues":["_schdlr_"]} []
+[2025-02-24 17:09:41] main.INFO: Starting worker 493dee600e17:560:_schdlr_ {"type":"start","worker":"493dee600e17:560:_schdlr_"} []

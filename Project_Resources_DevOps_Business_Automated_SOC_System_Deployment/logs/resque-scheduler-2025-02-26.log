@@ -1,0 +1,5 @@
+[2025-02-26 09:35:06] main.INFO: *** Starting scheduler worker ddb8e758f1d0:750:_schdlr_ {"type":"start","worker":"ddb8e758f1d0:750","queues":["_schdlr_"]} []
+[2025-02-26 09:35:06] main.INFO: Starting worker ddb8e758f1d0:750:_schdlr_ {"type":"start","worker":"ddb8e758f1d0:750:_schdlr_"} []
+[2025-02-26 10:35:06] main.INFO: Exiting... {"type":"shutdown","worker":"ddb8e758f1d0:750"} []
+[2025-02-26 10:35:09] main.INFO: *** Starting scheduler worker ddb8e758f1d0:982:_schdlr_ {"type":"start","worker":"ddb8e758f1d0:982","queues":["_schdlr_"]} []
+[2025-02-26 10:35:09] main.INFO: Starting worker ddb8e758f1d0:982:_schdlr_ {"type":"start","worker":"ddb8e758f1d0:982:_schdlr_"} []

@@ -1,0 +1,314 @@
+Traceback (most recent call last):
+  File "/var/www/MISP/app/files/scripts/mispzmq/mispzmq.py", line 214, in <module>
+    mzq.main()
+  File "/var/www/MISP/app/files/scripts/mispzmq/mispzmq.py", line 182, in main
+    data = self.r.blpop(lists, timeout=10)
+  File "/usr/local/lib/python3.9/dist-packages/redis/commands/core.py", line 2594, in blpop
+    return self.execute_command("BLPOP", *keys)
+  File "/usr/local/lib/python3.9/dist-packages/redis/client.py", line 536, in execute_command
+    return conn.retry.call_with_retry(
+  File "/usr/local/lib/python3.9/dist-packages/redis/retry.py", line 49, in call_with_retry
+    fail(error)
+  File "/usr/local/lib/python3.9/dist-packages/redis/client.py", line 540, in <lambda>
+    lambda error: self._disconnect_raise(conn, error),
+  File "/usr/local/lib/python3.9/dist-packages/redis/client.py", line 526, in _disconnect_raise
+    raise error
+  File "/usr/local/lib/python3.9/dist-packages/redis/retry.py", line 46, in call_with_retry
+    return do()
+  File "/usr/local/lib/python3.9/dist-packages/redis/client.py", line 537, in <lambda>
+    lambda: self._send_command_parse_response(
+  File "/usr/local/lib/python3.9/dist-packages/redis/client.py", line 513, in _send_command_parse_response
+    return self.parse_response(conn, command_name, **options)
+  File "/usr/local/lib/python3.9/dist-packages/redis/client.py", line 553, in parse_response
+    response = connection.read_response()
+  File "/usr/local/lib/python3.9/dist-packages/redis/connection.py", line 500, in read_response
+    response = self._parser.read_response(disable_decoding=disable_decoding)
+  File "/usr/local/lib/python3.9/dist-packages/redis/_parsers/resp2.py", line 15, in read_response
+    result = self._read_response(disable_decoding=disable_decoding)
+  File "/usr/local/lib/python3.9/dist-packages/redis/_parsers/resp2.py", line 25, in _read_response
+    raw = self._buffer.readline()
+  File "/usr/local/lib/python3.9/dist-packages/redis/_parsers/socket.py", line 115, in readline
+    self._read_from_socket()
+  File "/usr/local/lib/python3.9/dist-packages/redis/_parsers/socket.py", line 68, in _read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+Traceback (most recent call last):
+  File "/var/www/MISP/app/files/scripts/mispzmq/mispzmq.py", line 212, in <module>
+    mzq = MispZmq()
+  File "/var/www/MISP/app/files/scripts/mispzmq/mispzmq.py", line 70, in __init__
+    raise Exception("mispzmq already running on PID {}".format(pid))
+Exception: mispzmq already running on PID 73
+Traceback (most recent call last):
+  File "/var/www/MISP/app/files/scripts/mispzmq/mispzmq.py", line 214, in <module>
+    mzq.main()
+  File "/var/www/MISP/app/files/scripts/mispzmq/mispzmq.py", line 182, in main
+    data = self.r.blpop(lists, timeout=10)
+  File "/usr/local/lib/python3.9/dist-packages/redis/commands/core.py", line 2594, in blpop
+    return self.execute_command("BLPOP", *keys)
+  File "/usr/local/lib/python3.9/dist-packages/redis/client.py", line 536, in execute_command
+    return conn.retry.call_with_retry(
+  File "/usr/local/lib/python3.9/dist-packages/redis/retry.py", line 49, in call_with_retry
+    fail(error)
+  File "/usr/local/lib/python3.9/dist-packages/redis/client.py", line 540, in <lambda>
+    lambda error: self._disconnect_raise(conn, error),
+  File "/usr/local/lib/python3.9/dist-packages/redis/client.py", line 526, in _disconnect_raise
+    raise error
+  File "/usr/local/lib/python3.9/dist-packages/redis/retry.py", line 46, in call_with_retry
+    return do()
+  File "/usr/local/lib/python3.9/dist-packages/redis/client.py", line 537, in <lambda>
+    lambda: self._send_command_parse_response(
+  File "/usr/local/lib/python3.9/dist-packages/redis/client.py", line 513, in _send_command_parse_response
+    return self.parse_response(conn, command_name, **options)
+  File "/usr/local/lib/python3.9/dist-packages/redis/client.py", line 553, in parse_response
+    response = connection.read_response()
+  File "/usr/local/lib/python3.9/dist-packages/redis/connection.py", line 500, in read_response
+    response = self._parser.read_response(disable_decoding=disable_decoding)
+  File "/usr/local/lib/python3.9/dist-packages/redis/_parsers/resp2.py", line 15, in read_response
+    result = self._read_response(disable_decoding=disable_decoding)
+  File "/usr/local/lib/python3.9/dist-packages/redis/_parsers/resp2.py", line 25, in _read_response
+    raw = self._buffer.readline()
+  File "/usr/local/lib/python3.9/dist-packages/redis/_parsers/socket.py", line 115, in readline
+    self._read_from_socket()
+  File "/usr/local/lib/python3.9/dist-packages/redis/_parsers/socket.py", line 68, in _read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+Traceback (most recent call last):
+  File "/var/www/MISP/app/files/scripts/mispzmq/mispzmq.py", line 212, in <module>
+    mzq = MispZmq()
+  File "/var/www/MISP/app/files/scripts/mispzmq/mispzmq.py", line 70, in __init__
+    raise Exception("mispzmq already running on PID {}".format(pid))
+Exception: mispzmq already running on PID 73
+Traceback (most recent call last):
+  File "/var/www/MISP/app/files/scripts/mispzmq/mispzmq.py", line 214, in <module>
+    mzq.main()
+  File "/var/www/MISP/app/files/scripts/mispzmq/mispzmq.py", line 182, in main
+    data = self.r.blpop(lists, timeout=10)
+  File "/usr/local/lib/python3.9/dist-packages/redis/commands/core.py", line 2594, in blpop
+    return self.execute_command("BLPOP", *keys)
+  File "/usr/local/lib/python3.9/dist-packages/redis/client.py", line 536, in execute_command
+    return conn.retry.call_with_retry(
+  File "/usr/local/lib/python3.9/dist-packages/redis/retry.py", line 49, in call_with_retry
+    fail(error)
+  File "/usr/local/lib/python3.9/dist-packages/redis/client.py", line 540, in <lambda>
+    lambda error: self._disconnect_raise(conn, error),
+  File "/usr/local/lib/python3.9/dist-packages/redis/client.py", line 526, in _disconnect_raise
+    raise error
+  File "/usr/local/lib/python3.9/dist-packages/redis/retry.py", line 46, in call_with_retry
+    return do()
+  File "/usr/local/lib/python3.9/dist-packages/redis/client.py", line 537, in <lambda>
+    lambda: self._send_command_parse_response(
+  File "/usr/local/lib/python3.9/dist-packages/redis/client.py", line 513, in _send_command_parse_response
+    return self.parse_response(conn, command_name, **options)
+  File "/usr/local/lib/python3.9/dist-packages/redis/client.py", line 553, in parse_response
+    response = connection.read_response()
+  File "/usr/local/lib/python3.9/dist-packages/redis/connection.py", line 500, in read_response
+    response = self._parser.read_response(disable_decoding=disable_decoding)
+  File "/usr/local/lib/python3.9/dist-packages/redis/_parsers/resp2.py", line 15, in read_response
+    result = self._read_response(disable_decoding=disable_decoding)
+  File "/usr/local/lib/python3.9/dist-packages/redis/_parsers/resp2.py", line 25, in _read_response
+    raw = self._buffer.readline()
+  File "/usr/local/lib/python3.9/dist-packages/redis/_parsers/socket.py", line 115, in readline
+    self._read_from_socket()
+  File "/usr/local/lib/python3.9/dist-packages/redis/_parsers/socket.py", line 68, in _read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+Traceback (most recent call last):
+  File "/var/www/MISP/app/files/scripts/mispzmq/mispzmq.py", line 212, in <module>
+    mzq = MispZmq()
+  File "/var/www/MISP/app/files/scripts/mispzmq/mispzmq.py", line 70, in __init__
+    raise Exception("mispzmq already running on PID {}".format(pid))
+Exception: mispzmq already running on PID 73
+Traceback (most recent call last):
+  File "/var/www/MISP/app/files/scripts/mispzmq/mispzmq.py", line 214, in <module>
+    mzq.main()
+  File "/var/www/MISP/app/files/scripts/mispzmq/mispzmq.py", line 182, in main
+    data = self.r.blpop(lists, timeout=10)
+  File "/usr/local/lib/python3.9/dist-packages/redis/commands/core.py", line 2594, in blpop
+    return self.execute_command("BLPOP", *keys)
+  File "/usr/local/lib/python3.9/dist-packages/redis/client.py", line 536, in execute_command
+    return conn.retry.call_with_retry(
+  File "/usr/local/lib/python3.9/dist-packages/redis/retry.py", line 49, in call_with_retry
+    fail(error)
+  File "/usr/local/lib/python3.9/dist-packages/redis/client.py", line 540, in <lambda>
+    lambda error: self._disconnect_raise(conn, error),
+  File "/usr/local/lib/python3.9/dist-packages/redis/client.py", line 526, in _disconnect_raise
+    raise error
+  File "/usr/local/lib/python3.9/dist-packages/redis/retry.py", line 46, in call_with_retry
+    return do()
+  File "/usr/local/lib/python3.9/dist-packages/redis/client.py", line 537, in <lambda>
+    lambda: self._send_command_parse_response(
+  File "/usr/local/lib/python3.9/dist-packages/redis/client.py", line 513, in _send_command_parse_response
+    return self.parse_response(conn, command_name, **options)
+  File "/usr/local/lib/python3.9/dist-packages/redis/client.py", line 553, in parse_response
+    response = connection.read_response()
+  File "/usr/local/lib/python3.9/dist-packages/redis/connection.py", line 500, in read_response
+    response = self._parser.read_response(disable_decoding=disable_decoding)
+  File "/usr/local/lib/python3.9/dist-packages/redis/_parsers/resp2.py", line 15, in read_response
+    result = self._read_response(disable_decoding=disable_decoding)
+  File "/usr/local/lib/python3.9/dist-packages/redis/_parsers/resp2.py", line 25, in _read_response
+    raw = self._buffer.readline()
+  File "/usr/local/lib/python3.9/dist-packages/redis/_parsers/socket.py", line 115, in readline
+    self._read_from_socket()
+  File "/usr/local/lib/python3.9/dist-packages/redis/_parsers/socket.py", line 68, in _read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+Traceback (most recent call last):
+  File "/var/www/MISP/app/files/scripts/mispzmq/mispzmq.py", line 212, in <module>
+    mzq = MispZmq()
+  File "/var/www/MISP/app/files/scripts/mispzmq/mispzmq.py", line 70, in __init__
+    raise Exception("mispzmq already running on PID {}".format(pid))
+Exception: mispzmq already running on PID 73
+Traceback (most recent call last):
+  File "/var/www/MISP/app/files/scripts/mispzmq/mispzmq.py", line 214, in <module>
+    mzq.main()
+  File "/var/www/MISP/app/files/scripts/mispzmq/mispzmq.py", line 182, in main
+    data = self.r.blpop(lists, timeout=10)
+  File "/usr/local/lib/python3.9/dist-packages/redis/commands/core.py", line 2594, in blpop
+    return self.execute_command("BLPOP", *keys)
+  File "/usr/local/lib/python3.9/dist-packages/redis/client.py", line 536, in execute_command
+    return conn.retry.call_with_retry(
+  File "/usr/local/lib/python3.9/dist-packages/redis/retry.py", line 49, in call_with_retry
+    fail(error)
+  File "/usr/local/lib/python3.9/dist-packages/redis/client.py", line 540, in <lambda>
+    lambda error: self._disconnect_raise(conn, error),
+  File "/usr/local/lib/python3.9/dist-packages/redis/client.py", line 526, in _disconnect_raise
+    raise error
+  File "/usr/local/lib/python3.9/dist-packages/redis/retry.py", line 46, in call_with_retry
+    return do()
+  File "/usr/local/lib/python3.9/dist-packages/redis/client.py", line 537, in <lambda>
+    lambda: self._send_command_parse_response(
+  File "/usr/local/lib/python3.9/dist-packages/redis/client.py", line 513, in _send_command_parse_response
+    return self.parse_response(conn, command_name, **options)
+  File "/usr/local/lib/python3.9/dist-packages/redis/client.py", line 553, in parse_response
+    response = connection.read_response()
+  File "/usr/local/lib/python3.9/dist-packages/redis/connection.py", line 500, in read_response
+    response = self._parser.read_response(disable_decoding=disable_decoding)
+  File "/usr/local/lib/python3.9/dist-packages/redis/_parsers/resp2.py", line 15, in read_response
+    result = self._read_response(disable_decoding=disable_decoding)
+  File "/usr/local/lib/python3.9/dist-packages/redis/_parsers/resp2.py", line 25, in _read_response
+    raw = self._buffer.readline()
+  File "/usr/local/lib/python3.9/dist-packages/redis/_parsers/socket.py", line 115, in readline
+    self._read_from_socket()
+  File "/usr/local/lib/python3.9/dist-packages/redis/_parsers/socket.py", line 68, in _read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+Traceback (most recent call last):
+  File "/var/www/MISP/app/files/scripts/mispzmq/mispzmq.py", line 212, in <module>
+    mzq = MispZmq()
+  File "/var/www/MISP/app/files/scripts/mispzmq/mispzmq.py", line 70, in __init__
+    raise Exception("mispzmq already running on PID {}".format(pid))
+Exception: mispzmq already running on PID 94
+Traceback (most recent call last):
+  File "/var/www/MISP/app/files/scripts/mispzmq/mispzmq.py", line 214, in <module>
+    mzq.main()
+  File "/var/www/MISP/app/files/scripts/mispzmq/mispzmq.py", line 182, in main
+    data = self.r.blpop(lists, timeout=10)
+  File "/usr/local/lib/python3.9/dist-packages/redis/commands/core.py", line 2594, in blpop
+    return self.execute_command("BLPOP", *keys)
+  File "/usr/local/lib/python3.9/dist-packages/redis/client.py", line 536, in execute_command
+    return conn.retry.call_with_retry(
+  File "/usr/local/lib/python3.9/dist-packages/redis/retry.py", line 49, in call_with_retry
+    fail(error)
+  File "/usr/local/lib/python3.9/dist-packages/redis/client.py", line 540, in <lambda>
+    lambda error: self._disconnect_raise(conn, error),
+  File "/usr/local/lib/python3.9/dist-packages/redis/client.py", line 526, in _disconnect_raise
+    raise error
+  File "/usr/local/lib/python3.9/dist-packages/redis/retry.py", line 46, in call_with_retry
+    return do()
+  File "/usr/local/lib/python3.9/dist-packages/redis/client.py", line 537, in <lambda>
+    lambda: self._send_command_parse_response(
+  File "/usr/local/lib/python3.9/dist-packages/redis/client.py", line 513, in _send_command_parse_response
+    return self.parse_response(conn, command_name, **options)
+  File "/usr/local/lib/python3.9/dist-packages/redis/client.py", line 553, in parse_response
+    response = connection.read_response()
+  File "/usr/local/lib/python3.9/dist-packages/redis/connection.py", line 500, in read_response
+    response = self._parser.read_response(disable_decoding=disable_decoding)
+  File "/usr/local/lib/python3.9/dist-packages/redis/_parsers/resp2.py", line 15, in read_response
+    result = self._read_response(disable_decoding=disable_decoding)
+  File "/usr/local/lib/python3.9/dist-packages/redis/_parsers/resp2.py", line 25, in _read_response
+    raw = self._buffer.readline()
+  File "/usr/local/lib/python3.9/dist-packages/redis/_parsers/socket.py", line 115, in readline
+    self._read_from_socket()
+  File "/usr/local/lib/python3.9/dist-packages/redis/_parsers/socket.py", line 68, in _read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+Traceback (most recent call last):
+  File "/var/www/MISP/app/files/scripts/mispzmq/mispzmq.py", line 212, in <module>
+    mzq = MispZmq()
+  File "/var/www/MISP/app/files/scripts/mispzmq/mispzmq.py", line 70, in __init__
+    raise Exception("mispzmq already running on PID {}".format(pid))
+Exception: mispzmq already running on PID 73
+Traceback (most recent call last):
+  File "/var/www/MISP/app/files/scripts/mispzmq/mispzmq.py", line 214, in <module>
+    mzq.main()
+  File "/var/www/MISP/app/files/scripts/mispzmq/mispzmq.py", line 182, in main
+    data = self.r.blpop(lists, timeout=10)
+  File "/usr/local/lib/python3.9/dist-packages/redis/commands/core.py", line 2594, in blpop
+    return self.execute_command("BLPOP", *keys)
+  File "/usr/local/lib/python3.9/dist-packages/redis/client.py", line 536, in execute_command
+    return conn.retry.call_with_retry(
+  File "/usr/local/lib/python3.9/dist-packages/redis/retry.py", line 49, in call_with_retry
+    fail(error)
+  File "/usr/local/lib/python3.9/dist-packages/redis/client.py", line 540, in <lambda>
+    lambda error: self._disconnect_raise(conn, error),
+  File "/usr/local/lib/python3.9/dist-packages/redis/client.py", line 526, in _disconnect_raise
+    raise error
+  File "/usr/local/lib/python3.9/dist-packages/redis/retry.py", line 46, in call_with_retry
+    return do()
+  File "/usr/local/lib/python3.9/dist-packages/redis/client.py", line 537, in <lambda>
+    lambda: self._send_command_parse_response(
+  File "/usr/local/lib/python3.9/dist-packages/redis/client.py", line 513, in _send_command_parse_response
+    return self.parse_response(conn, command_name, **options)
+  File "/usr/local/lib/python3.9/dist-packages/redis/client.py", line 553, in parse_response
+    response = connection.read_response()
+  File "/usr/local/lib/python3.9/dist-packages/redis/connection.py", line 500, in read_response
+    response = self._parser.read_response(disable_decoding=disable_decoding)
+  File "/usr/local/lib/python3.9/dist-packages/redis/_parsers/resp2.py", line 15, in read_response
+    result = self._read_response(disable_decoding=disable_decoding)
+  File "/usr/local/lib/python3.9/dist-packages/redis/_parsers/resp2.py", line 25, in _read_response
+    raw = self._buffer.readline()
+  File "/usr/local/lib/python3.9/dist-packages/redis/_parsers/socket.py", line 115, in readline
+    self._read_from_socket()
+  File "/usr/local/lib/python3.9/dist-packages/redis/_parsers/socket.py", line 68, in _read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+Traceback (most recent call last):
+  File "/var/www/MISP/app/files/scripts/mispzmq/mispzmq.py", line 212, in <module>
+    mzq = MispZmq()
+  File "/var/www/MISP/app/files/scripts/mispzmq/mispzmq.py", line 70, in __init__
+    raise Exception("mispzmq already running on PID {}".format(pid))
+Exception: mispzmq already running on PID 73
+Traceback (most recent call last):
+  File "/var/www/MISP/app/files/scripts/mispzmq/mispzmq.py", line 214, in <module>
+    mzq.main()
+  File "/var/www/MISP/app/files/scripts/mispzmq/mispzmq.py", line 182, in main
+    data = self.r.blpop(lists, timeout=10)
+  File "/usr/local/lib/python3.9/dist-packages/redis/commands/core.py", line 2594, in blpop
+    return self.execute_command("BLPOP", *keys)
+  File "/usr/local/lib/python3.9/dist-packages/redis/client.py", line 536, in execute_command
+    return conn.retry.call_with_retry(
+  File "/usr/local/lib/python3.9/dist-packages/redis/retry.py", line 49, in call_with_retry
+    fail(error)
+  File "/usr/local/lib/python3.9/dist-packages/redis/client.py", line 540, in <lambda>
+    lambda error: self._disconnect_raise(conn, error),
+  File "/usr/local/lib/python3.9/dist-packages/redis/client.py", line 526, in _disconnect_raise
+    raise error
+  File "/usr/local/lib/python3.9/dist-packages/redis/retry.py", line 46, in call_with_retry
+    return do()
+  File "/usr/local/lib/python3.9/dist-packages/redis/client.py", line 537, in <lambda>
+    lambda: self._send_command_parse_response(
+  File "/usr/local/lib/python3.9/dist-packages/redis/client.py", line 513, in _send_command_parse_response
+    return self.parse_response(conn, command_name, **options)
+  File "/usr/local/lib/python3.9/dist-packages/redis/client.py", line 553, in parse_response
+    response = connection.read_response()
+  File "/usr/local/lib/python3.9/dist-packages/redis/connection.py", line 500, in read_response
+    response = self._parser.read_response(disable_decoding=disable_decoding)
+  File "/usr/local/lib/python3.9/dist-packages/redis/_parsers/resp2.py", line 15, in read_response
+    result = self._read_response(disable_decoding=disable_decoding)
+  File "/usr/local/lib/python3.9/dist-packages/redis/_parsers/resp2.py", line 25, in _read_response
+    raw = self._buffer.readline()
+  File "/usr/local/lib/python3.9/dist-packages/redis/_parsers/socket.py", line 115, in readline
+    self._read_from_socket()
+  File "/usr/local/lib/python3.9/dist-packages/redis/_parsers/socket.py", line 68, in _read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.

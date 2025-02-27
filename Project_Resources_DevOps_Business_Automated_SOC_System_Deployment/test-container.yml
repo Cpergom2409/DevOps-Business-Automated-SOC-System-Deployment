@@ -1,0 +1,11 @@
+services:
+  sender:
+    build: .
+    container_name: splunk_event_sender
+    restart: always
+    networks:
+      - SOC_NET
+
+networks:
+    SOC_NET:
+          driver: bridge
