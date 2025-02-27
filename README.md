@@ -60,11 +60,11 @@ El objetivo es ofrecer una solución automatizada para desplegar y gestionar un 
 
 - 🔄 Integración y Automatización
 
-- Integración total entre Splunk, TheHive, Cortex y MISP.
+  - Integración total entre Splunk, TheHive, Cortex y MISP.
 
-- Configuración de flujos de trabajo automáticos para la respuesta ante incidentes.
+  - Configuración de flujos de trabajo automáticos para la respuesta ante incidentes.
 
-- Generación de alertas y notificaciones en tiempo real a través de Discord.
+  - Generación de alertas y notificaciones en tiempo real a través de Discord.
 
 📂 Estructura del Proyecto
 
